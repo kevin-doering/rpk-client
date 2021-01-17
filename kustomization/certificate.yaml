@@ -6,7 +6,7 @@ metadata:
   namespace: rpk-client
 spec:
   dnsNames:
-  - rpk-client.rampike.de
+  - client.rampike.de
   issuerRef:
     kind: ClusterIssuer
     name: acme-staging
