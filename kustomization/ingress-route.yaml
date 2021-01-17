@@ -1,0 +1,17 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: rpk-client
+  namespace: rpk-client
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - match: Host(`rpk-client.rampike.de`)
+    kind: Rule
+    services:
+    - name: rpk-client
+      port: 80
+  tls:
+    secretName: rpk-client-certificate
