@@ -8,7 +8,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-  - match: Host(`rpk-client.rampike.de`)
+  - match: Host(`client.rampike.de`)
     kind: Rule
     services:
     - name: rpk-client
