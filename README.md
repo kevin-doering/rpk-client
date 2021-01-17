@@ -1,0 +1,1 @@
+# rpk-client manifests
