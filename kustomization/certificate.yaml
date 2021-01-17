@@ -9,5 +9,5 @@ spec:
   - client.rampike.de
   issuerRef:
     kind: ClusterIssuer
-    name: acme-staging
+    name: acme-production
   secretName: rpk-client-certificate
